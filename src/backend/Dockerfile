@@ -1,7 +1,13 @@
 FROM node:16
-WORKDIR /user/src/app
-COPY package*.json ./
+
+WORKDIR /usr/src/app
+
+COPY src/backend/package*.json ./
+
 RUN npm install
-COPY . .
+
+COPY src/backend/ .
+
 EXPOSE 8080
-CMD [ "npm", "start" ]
+
+CMD ["node", "server.js"]
