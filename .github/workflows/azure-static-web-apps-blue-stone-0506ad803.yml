@@ -49,8 +49,7 @@ jobs:
         with:
           urls: |
             https://todo-app.michaelcarmo.emf-informatique.ch/
-            http://20.82.132.225/
-          configPath: './lighthouserc.json'
+          configPath: "./lighthouserc.json"
           uploadArtifacts: true # Save results as an action artifact
           temporaryPublicStorage: true # Upload lighthouse report to temporary storage
 
